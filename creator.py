@@ -50,12 +50,8 @@ user = st.text_input("Please enter your Babbel email to start")
 # In[ ]:
 
 
-if user == "smathew@babbel.com":
-    st.subheader("Hello Serene, I was waiting for you!")
-    st.write("Alright, let's create an offer page together")
-elif user == "nzawila@babbel.com":
-    st.subheader("Hello my favourite EM, I was waiting for you!")
-    st.write("Alright, let's create an offer page together")
+if user:
+  st.write('thanks')
 elif not user:
     st.warning('Please input your email')
     st.stop()
